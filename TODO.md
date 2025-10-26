@@ -4,7 +4,7 @@
 - [x] Update frontend API base URL for production
 - [ ] Ensure backend environment variables are set for production
 - [x] Add production start script to backend if needed
-- [ ] Build frontend for production
+- [x] Build frontend for production
 
 ## Backend Deployment (Railway)
 - [ ] Create Railway account and project
@@ -18,7 +18,7 @@
 - [ ] Connect GitHub repository to Netlify
 - [ ] Set build command: `npm run build`
 - [ ] Set publish directory: `build`
-- [ ] Set environment variable: REACT_APP_API_URL to Railway backend URL
+- [ ] Set environment variable: REACT_APP_API_URL to Render backend URL (e.g., https://your-app.onrender.com/api)
 - [ ] Deploy frontend to Netlify
 - [ ] Note the deployed frontend URL
 
