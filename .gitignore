@@ -53,7 +53,7 @@ temp/
 Thumbs.db
 
 # Build outputs
-
+build/
 dist/
 
 # Database files (if using local SQLite or similar)

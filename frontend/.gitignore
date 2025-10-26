@@ -9,7 +9,7 @@
 /coverage
 
 # production
-
+/build
 
 # misc
 .DS_Store
@@ -109,7 +109,7 @@ dist
 
 # Gatsby files
 .cache/
-public
+
 
 # Storybook build outputs
 .out

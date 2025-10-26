@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const API_URL = process.env.REACT_APP_API_URL || 'https://fitness-tracker-app-9kfg.onrender.com/api';
 
 // For production, this will be set to your Render backend URL
 // Example: https://your-app-name.onrender.com/api
