@@ -3,6 +3,9 @@
   "outputDirectory": "build",
   "installCommand": "npm install",
   "framework": "react",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
   "env": {
     "REACT_APP_API_URL": "https://your-render-backend.onrender.com/api"
   }
