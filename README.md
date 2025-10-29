@@ -5,7 +5,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-8.19.1-green.svg)](https://www.mongodb.com/)
 [![Live Demo](https://img.shields.io/badge/Live_Demo-View_App-blue)](https://your-app-deployment-link.com)
-[![Pitch Deck](https://img.shields.io/badge/Pitch_Deck-Canva-red)](https://your-canva-pitch-deck-link.com)
+[![Pitch Deck](https://img.shields.io/badge/Pitch_Deck-Gamma-red)](https://gamma.app/docs/Fitness-Tracker-App-98m0g8172es4trc)
 
 A comprehensive fitness tracking application designed to promote healthy lifestyles and contribute to United Nations Sustainable Development Goal 3 (SDG 3): Good Health and Well-being.
 
@@ -36,8 +36,8 @@ This application directly supports **SDG 3: Good Health and Well-being** by:
 
 Experience the application firsthand and explore our business vision:
 
-- **🌐 Live Demo**: [View the live application](https://your-app-deployment-link.com)
-- **📊 Pitch Deck**: [View our Canva pitch deck](https://your-canva-pitch-deck-link.com)
+- **🌐 Live Demo**: [View the live application](https://fitness-tracker-app-mc6o.vercel.app/)
+- **📊 Pitch Deck**: [View my Gamma pitch deck](https://gamma.app/docs/Fitness-Tracker-App-98m0g8172es4trc)
 
 These resources showcase how our fitness tracker directly contributes to SDG 3 through innovative health technology.
 
