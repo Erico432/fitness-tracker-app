@@ -8,9 +8,6 @@ const { initializeTemplates } = require('./controllers/templateController');
 // Load env vars
 dotenv.config();
 
-// Connect to database
-connectDB();
-
 const app = express();
 
 // Middleware
@@ -30,12 +27,30 @@ app.use('/api/goals', require('./routes/goals'));
 app.use('/api/templates', require('./routes/templates'));
 app.use('/api/streak', require('./routes/streak'));
 
-// Initialize achievements and templates on server start
-connectDB().then(async () => {
-  await initializeAchievements();
-  await initializeTemplates();
-  console.log('Default achievements and templates initialized');
-});
+// Initialize server after DB connection and data setup
+const startServer = async () => {
+  try {
+    // Connect to database
+    await connectDB();
+
+    // Initialize achievements and templates
+    await initializeAchievements();
+    await initializeTemplates();
+    console.log('Default achievements and templates initialized');
+
+    // Start server
+    const PORT = process.env.PORT || 5000;
+    app.listen(PORT, () => {
+      console.log(`Server running in ${process.env.NODE_ENV || 'development'} mode on port ${PORT}`);
+    });
+  } catch (error) {
+    console.error('Failed to start server:', error);
+    process.exit(1);
+  }
+};
+
+startServer();
+
 // Root route
 app.get('/', (req, res) => {
   res.json({ message: 'Fitness Tracker API - Aligned with SDG 3' });
@@ -49,10 +64,4 @@ app.use((err, req, res, next) => {
     message: err.message,
     stack: process.env.NODE_ENV === 'production' ? null : err.stack,
   });
-});
-
-const PORT = process.env.PORT || 5000;
-
-app.listen(PORT, () => {
-  console.log(`Server running in ${process.env.NODE_ENV || 'development'} mode on port ${PORT}`);
 });

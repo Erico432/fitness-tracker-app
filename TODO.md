@@ -1,0 +1,4 @@
+- [x] Fix server startup to await DB connection and initialization
+- [x] Update vercel.json with correct backend URL
+- [x] Add error handling and logging for DB connections
+- [ ] Test the changes to ensure faster login times
